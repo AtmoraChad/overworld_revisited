@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "R": "overworld_revisited:thin_birch"
+  },
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+  "result": {
+    "id": "minecraft:birch_log"
+  }
+}

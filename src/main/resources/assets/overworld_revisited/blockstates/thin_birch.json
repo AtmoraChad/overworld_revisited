@@ -1,0 +1,58 @@
+{
+  "multipart": [
+    {
+      "apply": [
+        {
+          "model": "overworld_revisited:block/thin_birch1_age0"
+        },
+        {
+          "model": "overworld_revisited:block/thin_birch2_age0"
+        },
+        {
+          "model": "overworld_revisited:block/thin_birch3_age0"
+        },
+        {
+          "model": "overworld_revisited:block/thin_birch4_age0"
+        }
+      ],
+      "when": {
+        "age": "0"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "overworld_revisited:block/thin_birch1_age1"
+        },
+        {
+          "model": "overworld_revisited:block/thin_birch2_age1"
+        },
+        {
+          "model": "overworld_revisited:block/thin_birch3_age1"
+        },
+        {
+          "model": "overworld_revisited:block/thin_birch4_age1"
+        }
+      ],
+      "when": {
+        "age": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "overworld_revisited:block/thin_birch_small_leaves"
+      },
+      "when": {
+        "leaves": "small"
+      }
+    },
+    {
+      "apply": {
+        "model": "overworld_revisited:block/thin_birch_large_leaves"
+      },
+      "when": {
+        "leaves": "large"
+      }
+    }
+  ]
+}

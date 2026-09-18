@@ -1,0 +1,61 @@
+package net.atmorachad.overworld_revisited.datagen;
+
+import net.atmorachad.overworld_revisited.block.ModBlocks;
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
+import net.minecraft.client.data.models.BlockModelGenerators;
+import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.model.ModelLocationUtils;
+import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.level.block.Block;
+
+public class ModModelProvider extends FabricModelProvider {
+    public ModModelProvider(FabricPackOutput output) {super(output);}
+
+    @Override
+    public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
+
+        blockModelGenerators.createTrivialCube(ModBlocks.YELLOW_BIRCH_LEAVES);
+
+
+    }
+
+
+    @Override
+    public void generateItemModels(ItemModelGenerators itemModelGenerators) {
+
+
+    }
+
+    private static void registerWoodSet(BlockModelGenerators generator,
+            Block wood, Block log, Block stairs, Block slab, Block wall) {
+        TextureMapping textures = TextureMapping.cube(log);
+
+        // STAIRS
+        Identifier stair = ModelTemplates.STAIRS_STRAIGHT.create(stairs, textures, generator.modelOutput);
+        Identifier inner = ModelTemplates.STAIRS_INNER.create(stairs, textures, generator.modelOutput);
+        Identifier outer = ModelTemplates.STAIRS_OUTER.create(stairs, textures, generator.modelOutput);
+        generator.blockStateOutput.accept(BlockModelGenerators.createStairs(stairs,
+                BlockModelGenerators.plainVariant(inner), BlockModelGenerators.plainVariant(stair), BlockModelGenerators.plainVariant(outer)));
+        generator.registerSimpleItemModel(stairs, stair);
+
+        // SLAB
+        Identifier slabBottom = ModelTemplates.SLAB_BOTTOM.create(slab, textures, generator.modelOutput);
+        Identifier slabTop = ModelTemplates.SLAB_TOP.create(slab, textures, generator.modelOutput);
+        Identifier fullBlock = ModelLocationUtils.getModelLocation(wood);
+        generator.blockStateOutput.accept(BlockModelGenerators.createSlab(slab,
+                BlockModelGenerators.plainVariant(slabBottom), BlockModelGenerators.plainVariant(slabTop), BlockModelGenerators.plainVariant(fullBlock)));
+        generator.registerSimpleItemModel(slab, slabBottom);
+
+        // WALL
+        Identifier post = ModelTemplates.WALL_POST.create(wall, textures, generator.modelOutput);
+        Identifier low = ModelTemplates.WALL_LOW_SIDE.create(wall, textures, generator.modelOutput);
+        Identifier tall = ModelTemplates.WALL_TALL_SIDE.create(wall, textures, generator.modelOutput);
+        Identifier inventory = ModelTemplates.WALL_INVENTORY.create(wall, textures, generator.modelOutput);
+        generator.blockStateOutput.accept(BlockModelGenerators.createWall(wall,
+                BlockModelGenerators.plainVariant(post), BlockModelGenerators.plainVariant(low), BlockModelGenerators.plainVariant(tall)));
+        generator.registerSimpleItemModel(wall, inventory);
+    }
+}
