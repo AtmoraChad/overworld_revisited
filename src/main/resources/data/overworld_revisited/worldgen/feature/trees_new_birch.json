@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:random_selector",
+  "features": [
+    {
+      "chance": 0.25,
+      "feature": "overworld_revisited:new_birch_large"
+    },
+    {
+      "chance": 0.05,
+      "feature": "overworld_revisited:yellow_birch_large"
+    },
+    {
+      "chance": 0.40,
+      "feature": "overworld_revisited:new_birch_medium"
+    },
+    {
+      "chance": 0.0125,
+      "feature": "overworld_revisited:fallen_new_birch"
+    }
+  ],
+  "default": "overworld_revisited:new_birch_small"
+}

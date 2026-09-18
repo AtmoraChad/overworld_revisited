@@ -11,7 +11,7 @@
   "replaceable": "#minecraft:moss_replaceable",
   "surface": "floor",
 
-  "vegetation_chance": 0.6,
+  "vegetation_chance": 0.9,
 
   "vegetation_feature": {
     "feature": {
@@ -24,21 +24,6 @@
               "id": "minecraft:moss_carpet"
             },
             "weight": 45
-          },
-          {
-            "data": {
-              "id": "minecraft:short_grass"
-            },
-            "weight": 30
-          },
-          {
-            "data": {
-              "id": "minecraft:tall_grass",
-              "properties": {
-                "half": "lower"
-              }
-            },
-            "weight": 15
           },
           {
             "data": {
@@ -56,7 +41,7 @@
 
   "xz_radius": {
     "type": "minecraft:uniform",
-    "min_inclusive": 2,
-    "max_inclusive": 4
+    "min_inclusive": 6,
+    "max_inclusive": 9
   }
 }

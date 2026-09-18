@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:tree",
+
+  "below_trunk_provider": "minecraft:soil_beneath_tree",
+  "decorators": [
+    {
+      "type": "minecraft:beehive",
+      "probability": 0.02
+    },
+    {
+      "type": "minecraft:shelf_mushroom",
+      "probability": 0.6
+    }
+  ],
+
+  "foliage_placer": {
+    "type": "minecraft:poplar_foliage_placer",
+
+    "height": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 9,
+      "max_inclusive": 12
+    },
+
+    "offset": 0,
+
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 3,
+      "max_inclusive": 4
+    },
+
+    "side_hole_chance": 0.08
+  },
+
+  "foliage_provider": {
+    "type": "minecraft:simple",
+    "state": "overworld_revisited:yellow_birch_leaves"
+  },
+
+  "ignore_vines": true,
+
+  "minimum_size": {
+    "type": "minecraft:two_layers_feature_size",
+    "upper_size": 2
+  },
+
+  "trunk_placer": {
+    "type": "minecraft:poplar_trunk_placer",
+
+    "base_height": 22,
+    "height_rand_a": 2,
+    "height_rand_b": 2,
+
+    "branch_amount": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 1,
+      "max_inclusive": 3
+    },
+
+    "trunk_height_above_branches": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 3,
+      "max_inclusive": 5
+    }
+  },
+
+  "trunk_provider": {
+    "type": "minecraft:simple",
+    "state": "minecraft:birch_log"
+  }
+}
