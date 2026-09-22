@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "overworld_revisited:block/stormwood_planks"
+  }
+}

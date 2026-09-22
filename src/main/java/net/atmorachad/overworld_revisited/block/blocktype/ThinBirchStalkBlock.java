@@ -1,6 +1,7 @@
 package net.atmorachad.overworld_revisited.block.blocktype;
 
 import net.atmorachad.overworld_revisited.block.ModBlocks;
+import net.atmorachad.overworld_revisited.tag.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -91,7 +92,7 @@ public class ThinBirchStalkBlock  extends Block implements BonemealableBlock {
         if (belowState.is(ModBlocks.THIN_BIRCH)) {
             return this.defaultBlockState().setValue(AGE, belowState.getValue(AGE));
         }
-        if (belowState.is(BlockTags.SUPPORTS_BAMBOO)) {
+        if (belowState.is(ModTags.Blocks.SUPPORTS_THIN_BIRCH)) {
             BlockState aboveState = context.getLevel().getBlockState(context.getClickedPos().above());
             return aboveState.is(ModBlocks.THIN_BIRCH)
                     ? this.defaultBlockState().setValue(AGE, aboveState.getValue(AGE))
@@ -128,7 +129,7 @@ public class ThinBirchStalkBlock  extends Block implements BonemealableBlock {
     protected boolean canSurvive(final BlockState state, final LevelReader level, final BlockPos pos) {
         BlockState belowState = level.getBlockState(pos.below());
 
-        return belowState.is(BlockTags.SUPPORTS_BAMBOO)
+        return belowState.is(ModTags.Blocks.SUPPORTS_THIN_BIRCH)
                 || belowState.is(ModBlocks.THIN_BIRCH_SAPLING)
                 || belowState.is(ModBlocks.THIN_BIRCH);
     }

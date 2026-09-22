@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:random_selector",
+  "default": "minecraft:spruce_checked",
+  "features": [
+    {
+      "chance": 0.009,
+      "feature": "overworld_revisited:fallen_stormwood"
+    },
+    {
+      "chance": 0.06,
+      "feature": "overworld_revisited:stormwood_checked"
+    },
+    {
+      "chance": 0.1,
+      "feature": "minecraft:fancy_oak_checked"
+    },
+    {
+      "chance": 0.0125,
+      "feature": "minecraft:fallen_spruce_tree"
+    }
+  ]
+}

@@ -2,20 +2,35 @@ package net.atmorachad.overworld_revisited.item;
 
 import net.atmorachad.overworld_revisited.OverworldRevisited;
 import net.atmorachad.overworld_revisited.block.ModBlocks;
+import net.atmorachad.overworld_revisited.block.ModWindsweptBlocks;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SpawnEggItem;
+import net.minecraft.world.item.*;
 
 import java.util.function.Function;
 
 public class ModItems {
 
+    public static final Item GALE_SIGN = registerItem("stormwood_sign",
+            properties -> new StandingAndWallBlockItem(ModWindsweptBlocks.GALE_SIGN, ModWindsweptBlocks.GALE_WALL_SIGN, Direction.DOWN,
+                    properties));
 
+    public static final Item GALE_HANGING_SIGN = registerItem("stormwood_hanging_sign",
+            properties -> new HangingSignItem(ModWindsweptBlocks.GALE_HANGING_SIGN, ModWindsweptBlocks.GALE_WALL_HANGING_SIGN,
+                    properties));
+
+    public static final Item TEMPEST_GRASS = registerItem("tempest_grass",
+            properties -> new BlockItem(ModWindsweptBlocks.TEMPEST_GRASS,
+                    properties.useItemDescriptionPrefix()));
+
+    public static final Item TEMPEST_VINES = registerItem("tempest_vine",
+            properties -> new BlockItem(ModWindsweptBlocks.TEMPEST_VINE,
+                    properties.useItemDescriptionPrefix()));
 
     public static ResourceKey<Item> getRK(Item item) {
         return BuiltInRegistries.ITEM.getResourceKey(item).get();

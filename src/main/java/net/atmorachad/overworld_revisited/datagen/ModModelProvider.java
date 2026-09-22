@@ -1,6 +1,8 @@
 package net.atmorachad.overworld_revisited.datagen;
 
 import net.atmorachad.overworld_revisited.block.ModBlocks;
+import net.atmorachad.overworld_revisited.block.ModWindsweptBlocks;
+import net.atmorachad.overworld_revisited.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -19,6 +21,22 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockModelGenerators.createTrivialCube(ModBlocks.YELLOW_BIRCH_LEAVES);
 
+        blockModelGenerators.family(ModWindsweptBlocks.GALE_PLANKS)
+                .generateFor(ModWindsweptBlocks.GALE_FAMILY);
+
+
+        blockModelGenerators.createShelf(ModWindsweptBlocks.GALE_SHELF, ModWindsweptBlocks.STRIPPED_GALE_STEM);
+
+        blockModelGenerators.woodProvider(ModWindsweptBlocks.GALE_STEM)
+                .logWithHorizontal(ModWindsweptBlocks.GALE_STEM)
+                .wood(ModWindsweptBlocks.GALE_WOOD);
+
+        blockModelGenerators.woodProvider(ModWindsweptBlocks.STRIPPED_GALE_STEM)
+                .logWithHorizontal(ModWindsweptBlocks.STRIPPED_GALE_STEM)
+                .wood(ModWindsweptBlocks.STRIPPED_GALE_WOOD);
+
+        blockModelGenerators.createDoublePlant(ModWindsweptBlocks.TEMPEST_GRASS, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createTrivialCube(ModWindsweptBlocks.TEMPEST_LEAVES);
 
     }
 
@@ -26,6 +44,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
 
+        itemModelGenerators.generateFlatItem(ModItems.TEMPEST_GRASS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.TEMPEST_VINES, ModelTemplates.FLAT_ITEM);
 
     }
 

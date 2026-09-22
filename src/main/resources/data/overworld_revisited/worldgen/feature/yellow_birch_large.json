@@ -5,7 +5,7 @@
   "decorators": [
     {
       "type": "minecraft:beehive",
-      "probability": 0.02
+      "probability": 0.05
     },
     {
       "type": "minecraft:shelf_mushroom",
@@ -48,7 +48,7 @@
   "trunk_placer": {
     "type": "minecraft:poplar_trunk_placer",
 
-    "base_height": 22,
+    "base_height": 16,
     "height_rand_a": 2,
     "height_rand_b": 2,
 

@@ -1,5 +1,19 @@
 {
   "values": [
-    "overworld_revisited:thin_birch"
+    "overworld_revisited:thin_birch",
+    "overworld_revisited:stormwood_log",
+    "overworld_revisited:stormwood_wood",
+    "overworld_revisited:stripped_stormwood_log",
+    "overworld_revisited:stripped_stormwood_wood",
+    "overworld_revisited:stormwood_planks",
+    "overworld_revisited:stormwood_stairs",
+    "overworld_revisited:stormwood_slab",
+    "overworld_revisited:stormwood_fence",
+    "overworld_revisited:stormwood_fence_gate",
+    "overworld_revisited:stormwood_pressure_plate",
+    "overworld_revisited:stormwood_button",
+    "overworld_revisited:stormwood_shelf",
+    "overworld_revisited:stormwood_door",
+    "overworld_revisited:stormwood_trapdoor"
   ]
 }

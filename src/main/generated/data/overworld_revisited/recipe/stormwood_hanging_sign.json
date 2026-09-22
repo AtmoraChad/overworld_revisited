@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "R": "overworld_revisited:stripped_stormwood_log",
+    "S": "minecraft:iron_chain"
+  },
+  "pattern": [
+    "S S",
+    "RRR",
+    "RRR"
+  ],
+  "result": {
+    "count": 3,
+    "id": "overworld_revisited:stormwood_hanging_sign"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "overworld_revisited:block/stormwood_slab"
+    },
+    "type=double": {
+      "model": "overworld_revisited:block/stormwood_planks"
+    },
+    "type=top": {
+      "model": "overworld_revisited:block/stormwood_slab_top"
+    }
+  }
+}

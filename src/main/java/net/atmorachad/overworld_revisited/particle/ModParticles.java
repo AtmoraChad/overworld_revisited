@@ -12,6 +12,9 @@ public class ModParticles {
     public static final SimpleParticleType YELLOW_BIRCH_LEAVES =
             register("yellow_birch_leaves", FabricParticleTypes.simple());
 
+    public static final SimpleParticleType TEMPEST_LEAVES =
+            register("tempest_leaves", FabricParticleTypes.simple());
+
     private static SimpleParticleType register(String name, SimpleParticleType particle) {
         return Registry.register(BuiltInRegistries.PARTICLE_TYPE,
                 Identifier.fromNamespaceAndPath(OverworldRevisited.MOD_ID, name), particle);

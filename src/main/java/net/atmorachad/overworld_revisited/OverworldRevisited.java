@@ -1,6 +1,9 @@
 package net.atmorachad.overworld_revisited;
 
+import net.atmorachad.overworld_revisited.block.ModBlockEntities;
 import net.atmorachad.overworld_revisited.block.ModBlocks;
+import net.atmorachad.overworld_revisited.block.ModWindsweptBlocks;
+import net.atmorachad.overworld_revisited.creativetab.ModCreativeTabs;
 import net.atmorachad.overworld_revisited.item.ModItems;
 import net.atmorachad.overworld_revisited.particle.ModParticles;
 import net.fabricmc.api.ModInitializer;
@@ -21,11 +24,18 @@ public class OverworldRevisited implements ModInitializer {
 	public void onInitialize() {
 
 		ModBlocks.registerModBlocks();
+		ModWindsweptBlocks.registerModBlocks();
+		ModBlockEntities.registerModBlockEntities();
 		ModItems.registerModItems();
 		ModParticles.registerModParticles();
+		ModCreativeTabs.registerModCreativeModeTabs();
 
 		ParticleProviderRegistry.getInstance().register(
 				ModParticles.YELLOW_BIRCH_LEAVES, FallingLeavesParticle.PoplarProvider::new
+		);
+
+		ParticleProviderRegistry.getInstance().register(
+				ModParticles.TEMPEST_LEAVES, FallingLeavesParticle.PoplarProvider::new
 		);
 	}
 

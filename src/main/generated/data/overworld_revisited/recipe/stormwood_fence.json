@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "R": "overworld_revisited:stormwood_planks",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "RSR",
+    "RSR"
+  ],
+  "result": {
+    "count": 3,
+    "id": "overworld_revisited:stormwood_fence"
+  }
+}

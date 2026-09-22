@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "R": "overworld_revisited:stormwood_planks"
+  },
+  "pattern": [
+    "RR"
+  ],
+  "result": {
+    "id": "overworld_revisited:stormwood_pressure_plate"
+  }
+}

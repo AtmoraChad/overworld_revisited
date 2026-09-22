@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:rule_based",
+  "rules": [
+    {
+      "if_true": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:mud",
+              "minecraft:water"
+            ],
+            "offset": [1, 0, 0]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:mud",
+              "minecraft:water"
+            ],
+            "offset": [-1, 0, 0]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:mud",
+              "minecraft:water"
+            ],
+            "offset": [0, 0, 1]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:mud",
+              "minecraft:water"
+            ],
+            "offset": [0, 0, -1]
+          }
+        ]
+      },
+      "then": {
+        "type": "minecraft:weighted",
+        "entries": [
+          {
+            "data": {
+              "id": "minecraft:water",
+              "properties": {
+                "level": "0"
+              }
+            },
+            "weight": 4
+          },
+          {
+            "data": {
+              "id": "minecraft:mud"
+            },
+            "weight": 6
+          }
+        ]
+      }
+    }
+  ]
+}

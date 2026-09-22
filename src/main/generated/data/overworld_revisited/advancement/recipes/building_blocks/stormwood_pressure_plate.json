@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stormwood_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "overworld_revisited:stormwood_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "overworld_revisited:stormwood_pressure_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stormwood_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "overworld_revisited:stormwood_pressure_plate"
+    ]
+  }
+}

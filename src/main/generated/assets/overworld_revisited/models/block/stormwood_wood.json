@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "overworld_revisited:block/stormwood_log",
+    "side": "overworld_revisited:block/stormwood_log"
+  }
+}

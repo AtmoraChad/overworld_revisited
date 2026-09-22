@@ -3,6 +3,35 @@
 
   "block.overworld_revisited.thin_birch": "Slender Birch",
   "block.overworld_revisited.thin_birch_sapling": "Slender Birch Sapling",
-  "item.overworld_revisited.thin_birch": "Slender Birch"
+  "item.overworld_revisited.thin_birch": "Slender Birch",
 
+  "item.overworld_revisited.stormwood_sign": "Stormwood Sign",
+  "item.overworld_revisited.stormwood_hanging_sign": "Stormwood Hanging Sign",
+
+  "block.overworld_revisited.stormwood_log": "Stormwood Log",
+  "block.overworld_revisited.stormwood_wood": "Stormwood Wood",
+  "block.overworld_revisited.stripped_stormwood_log": "Stripped Stormwood Log",
+  "block.overworld_revisited.stripped_stormwood_wood": "Stripped Stormwood Wood",
+
+  "block.overworld_revisited.stormwood_planks": "Stormwood Planks",
+  "block.overworld_revisited.stormwood_stairs": "Stormwood Stairs",
+  "block.overworld_revisited.stormwood_slab": "Stormwood Slab",
+  "block.overworld_revisited.stormwood_fence": "Stormwood Fence",
+  "block.overworld_revisited.stormwood_fence_gate": "Stormwood Fence Gate",
+  "block.overworld_revisited.stormwood_pressure_plate": "Stormwood Pressure Plate",
+  "block.overworld_revisited.stormwood_button": "Stormwood Button",
+  "block.overworld_revisited.stormwood_shelf": "Stormwood Shelf",
+  "block.overworld_revisited.stormwood_door": "Stormwood Door",
+  "block.overworld_revisited.stormwood_trapdoor": "Stormwood Trapdoor",
+
+  "block.overworld_revisited.stormwood_sign": "Stormwood Sign",
+  "block.overworld_revisited.stormwood_hanging_sign": "Stormwood Hanging Sign",
+
+  "block.overworld_revisited.tempest_grass": "Tempest Grass",
+  "item.overworld_revisited.tempest_grass": "Tempest Grass",
+
+  "block.overworld_revisited.tempest_leaves": "Tempest Leaves",
+
+
+  "creativemodetab.overworld_revisited.fluorite_blocks": "Overworld Revisited"
 }

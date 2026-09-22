@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "overworld_revisited:block/stripped_stormwood_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "overworld_revisited:block/stripped_stormwood_wood"
+    },
+    "axis=z": {
+      "model": "overworld_revisited:block/stripped_stormwood_wood",
+      "x": 90
+    }
+  }
+}

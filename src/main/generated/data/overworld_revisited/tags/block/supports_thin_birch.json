@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:suspicious_gravel",
+    "minecraft:gravel",
+    "overworld_revisited:thin_birch_sapling",
+    "overworld_revisited:thin_birch",
+    "#minecraft:sand",
+    "#minecraft:substrate_overworld"
+  ]
+}

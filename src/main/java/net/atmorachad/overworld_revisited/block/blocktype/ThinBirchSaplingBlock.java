@@ -2,6 +2,7 @@ package net.atmorachad.overworld_revisited.block.blocktype;
 
 import net.atmorachad.overworld_revisited.block.ModBlocks;
 import net.atmorachad.overworld_revisited.item.ModItems;
+import net.atmorachad.overworld_revisited.tag.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -41,7 +42,7 @@ public class ThinBirchSaplingBlock extends Block implements BonemealableBlock {
 
     @Override
     protected boolean canSurvive(final BlockState state, final LevelReader level, final BlockPos pos) {
-        return level.getBlockState(pos.below()).is(BlockTags.SUPPORTS_BAMBOO);
+        return level.getBlockState(pos.below()).is(ModTags.Blocks.SUPPORTS_THIN_BIRCH);
     }
 
     @Override

@@ -1,8 +1,10 @@
 // 26.3	-999999999-01-01T00:00:00	Overworld Revisited/Tags for minecraft:item
-f6cabcf3c95278e7200e5e67be7c9c81a9aa4f9d data/minecraft/tags/item/leaves.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/mushrooms.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/stone_crafting_materials.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/stone_tool_materials.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/walls.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/wooden_slabs.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/wooden_stairs.json
+c84afcd73eecd6192a5a7559970e272ca96e46e1 data/minecraft/tags/item/fence_gates.json
+da5b54c975183759acab3cfa71f15e0538028791 data/minecraft/tags/item/leaves.json
+0d8f085f73dd9a38bb03f76b8f562ea520b60730 data/minecraft/tags/item/planks.json
+e7db79b6bcc5683495cace2eb68c9ba215b2a664 data/minecraft/tags/item/wooden_buttons.json
+48ec7430a88a70e8c44d28b2acb932c4d8548213 data/minecraft/tags/item/wooden_fences.json
+b9b861e0e562325eb16bee1547e54e6f83561841 data/minecraft/tags/item/wooden_pressure_plates.json
+c8716c9ff612f1fc4f125b8e8cc52d6efb3050ef data/minecraft/tags/item/wooden_slabs.json
+3b1a2501b81c3b11ee0665cafb582e36f4e98885 data/minecraft/tags/item/wooden_stairs.json
+b8ada231eeb2633cd1cdeffd8c2f992fd3b0f22f data/overworld_revisited/tags/item/gale_stems_crafting.json

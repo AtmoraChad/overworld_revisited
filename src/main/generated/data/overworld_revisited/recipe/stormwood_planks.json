@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    "#overworld_revisited:gale_stems_crafting"
+  ],
+  "result": {
+    "count": 4,
+    "id": "overworld_revisited:stormwood_planks"
+  }
+}

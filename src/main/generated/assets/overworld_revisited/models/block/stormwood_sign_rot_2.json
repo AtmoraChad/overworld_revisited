@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_sign_rot_2",
+  "textures": {
+    "all": "overworld_revisited:block/stormwood_sign",
+    "particle": "overworld_revisited:block/stormwood_planks"
+  }
+}

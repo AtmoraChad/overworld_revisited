@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_attached_hanging_sign_rot_2",
+  "textures": {
+    "all": "overworld_revisited:block/stormwood_hanging_sign",
+    "particle": "overworld_revisited:block/stripped_stormwood_log"
+  }
+}

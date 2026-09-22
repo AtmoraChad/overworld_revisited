@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "overworld_revisited:block/stormwood_door_bottom",
+    "top": "overworld_revisited:block/stormwood_door_top"
+  }
+}

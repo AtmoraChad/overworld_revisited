@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "R": "overworld_revisited:stormwood_planks"
+  },
+  "pattern": [
+    "RRR",
+    "RRR"
+  ],
+  "result": {
+    "id": "overworld_revisited:stormwood_trapdoor"
+  }
+}

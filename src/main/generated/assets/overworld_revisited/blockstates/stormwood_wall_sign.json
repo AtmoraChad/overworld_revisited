@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "overworld_revisited:block/stormwood_wall_sign",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "overworld_revisited:block/stormwood_wall_sign",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "overworld_revisited:block/stormwood_wall_sign"
+    },
+    "facing=west": {
+      "model": "overworld_revisited:block/stormwood_wall_sign",
+      "y": 90
+    }
+  }
+}
