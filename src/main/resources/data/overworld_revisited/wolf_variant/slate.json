@@ -1,0 +1,25 @@
+{
+  "assets": {
+    "angry": "overworld_revisited:entity/wolf/wolf_slate_angry",
+    "tame": "overworld_revisited:entity/wolf/wolf_slate_tame",
+    "wild": "overworld_revisited:entity/wolf/wolf_slate"
+  },
+  "baby_assets": {
+    "angry": "overworld_revisited:entity/wolf/wolf_slate_angry_baby",
+    "tame": "overworld_revisited:entity/wolf/wolf_slate_tame_baby",
+    "wild": "overworld_revisited:entity/wolf/wolf_slate_baby"
+  },
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": [
+          "minecraft:windswept_forest",
+          "minecraft:windswept_hills",
+          "minecraft:windswept_gravelly_hills"
+        ]
+      },
+      "priority": 3
+    }
+  ]
+}

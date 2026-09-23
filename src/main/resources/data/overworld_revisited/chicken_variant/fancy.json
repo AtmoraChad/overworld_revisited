@@ -1,0 +1,17 @@
+{
+  "asset_id": "overworld_revisited:entity/chicken/chicken_fancy",
+  "baby_asset_id": "overworld_revisited:entity/chicken/chicken_fancy_baby",
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": [
+          "minecraft:jungle",
+          "minecraft:sparse_jungle",
+          "minecraft:bamboo_jungle"
+        ]
+      },
+      "priority": 3
+    }
+  ]
+}

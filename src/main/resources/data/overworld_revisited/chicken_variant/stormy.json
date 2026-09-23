@@ -1,0 +1,18 @@
+{
+  "asset_id": "overworld_revisited:entity/chicken/chicken_stormy",
+  "baby_asset_id": "overworld_revisited:entity/chicken/chicken_stormy_baby",
+  "model": "cold",
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": [
+          "minecraft:windswept_forest",
+          "minecraft:windswept_hills",
+          "minecraft:windswept_gravelly_hills"
+        ]
+      },
+      "priority": 3
+    }
+  ]
+}

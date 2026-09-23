@@ -1,0 +1,9 @@
+{
+  "asset_id": "overworld_revisited:entity/cow/cow_dairy",
+  "baby_asset_id": "overworld_revisited:entity/cow/cow_dairy_baby",
+  "spawn_conditions": [
+    {
+      "priority": 0
+    }
+  ]
+}
