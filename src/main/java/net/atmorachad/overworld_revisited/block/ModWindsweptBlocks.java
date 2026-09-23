@@ -2,11 +2,13 @@ package net.atmorachad.overworld_revisited.block;
 
 import net.atmorachad.overworld_revisited.OverworldRevisited;
 import net.atmorachad.overworld_revisited.particle.ModParticles;
+import net.atmorachad.overworld_revisited.tag.ModTags;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.BlockFamily;
+import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvents;
@@ -14,6 +16,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.sounds.AmbientLeavesBlockSoundPlayer;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -118,6 +121,12 @@ public class ModWindsweptBlocks {
             properties -> new VineBlock(properties.mapColor(MapColor.PLANT).replaceable().noCollision().randomTicks()
                     .strength(0.2F).sound(SoundType.VINE).ignitedByLava()
                     .lightLevel(state -> 15).pushReaction(PushReaction.POPPED)));
+
+    public static final Block STORMWOOD_SAPLING = registerBlockWithoutItem("stormwood_sapling",
+            properties -> new SaplingBlock(ModTreeGrowers.STORMWOOD,
+                    properties.mapColor(MapColor.PLANT).noCollision().randomTicks().instabreak().sound(SoundType.GRASS)
+                            .pushReaction(PushReaction.POPPED)));
+
 
     public static final BlockFamily GALE_FAMILY =
             new BlockFamily.Builder(GALE_PLANKS)

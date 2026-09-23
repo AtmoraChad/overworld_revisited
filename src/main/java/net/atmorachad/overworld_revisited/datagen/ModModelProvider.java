@@ -38,6 +38,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createDoublePlant(ModWindsweptBlocks.TEMPEST_GRASS, BlockModelGenerators.PlantType.NOT_TINTED);
         blockModelGenerators.createTrivialCube(ModWindsweptBlocks.TEMPEST_LEAVES);
 
+        blockModelGenerators.createCrossBlock(ModWindsweptBlocks.STORMWOOD_SAPLING, BlockModelGenerators.PlantType.NOT_TINTED);
+
     }
 
 
@@ -46,6 +48,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerators.generateFlatItem(ModItems.TEMPEST_GRASS, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.TEMPEST_VINES, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.STORMWOOD_SAPLING, ModelTemplates.FLAT_ITEM);
+
 
     }
 

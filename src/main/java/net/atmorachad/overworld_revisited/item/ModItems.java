@@ -32,6 +32,10 @@ public class ModItems {
             properties -> new BlockItem(ModWindsweptBlocks.TEMPEST_VINE,
                     properties.useItemDescriptionPrefix()));
 
+    public static final Item STORMWOOD_SAPLING = registerItem("stormwood_sapling",
+            properties -> new BlockItem(ModWindsweptBlocks.STORMWOOD_SAPLING,
+                    properties.useItemDescriptionPrefix()));
+
     public static ResourceKey<Item> getRK(Item item) {
         return BuiltInRegistries.ITEM.getResourceKey(item).get();
     }

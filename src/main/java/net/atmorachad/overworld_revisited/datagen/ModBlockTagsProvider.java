@@ -163,11 +163,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.WALL_HANGING_SIGNS)
                 .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_WALL_HANGING_SIGN));
 
-        tag(BlockTags.REPLACEABLE)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_GRASS));
-
         tag(BlockTags.REPLACEABLE_BY_TREES)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_GRASS));
+                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_GRASS))
+             .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE));
 
 
         tag(BlockTags.LEAVES)
@@ -177,11 +175,18 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.REPLACEABLE)
                 .add(ModBlocks.getRK(ModBlocks.YELLOW_BIRCH_LEAVES))
+                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_GRASS))
+                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
                 .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_LEAVES));
+
+        tag(BlockTags.REPLACEABLE_BY_MUSHROOMS)
+
+                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE));
 
 
         tag(BlockTags.LAVA_POOL_STONE_CANNOT_REPLACE)
                 .add(ModBlocks.getRK(ModBlocks.YELLOW_BIRCH_LEAVES))
+                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
                 .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_LEAVES));
 
 
@@ -211,5 +216,25 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 ModBlocks.getRK(ModBlocks.THIN_BIRCH_SAPLING),
                 BlockTags.SWORD_INSTANTLY_MINES,
                 BlockTags.WASHED_AWAY_BY_FLUIDS);
+
+        addToTags(
+                ModBlocks.getRK(ModWindsweptBlocks.STORMWOOD_SAPLING),
+                BlockTags.SAPLINGS,
+                BlockTags.WASHED_AWAY_BY_FLUIDS);
+
+        addToTags(
+                ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE),
+                BlockTags.FALL_DAMAGE_RESETTING,
+                BlockTags.ENCHANTMENT_POWER_TRANSMITTER,
+                BlockTags.CLIMBABLE,
+                BlockTags.MANGROVE_LOGS_CAN_GROW_THROUGH,
+                BlockTags.MANGROVE_ROOTS_CAN_GROW_THROUGH,
+                BlockTags.CAN_GLIDE_THROUGH,
+                BlockTags.WASHED_AWAY_BY_FLUIDS,
+                BlockTags.SWORD_EFFICIENT,
+                BlockTags.SHEARS_MINOR_BREAKING_SPEED
+
+
+        );
     }
 }
