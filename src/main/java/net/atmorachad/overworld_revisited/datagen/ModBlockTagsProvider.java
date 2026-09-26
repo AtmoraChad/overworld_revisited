@@ -31,6 +31,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     protected void addTags(HolderLookup.Provider registries) {
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.getRK(ModBlocks.FRIGID_LICHEN));
+        ;
+
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
 
         ;
 
@@ -165,7 +169,16 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.REPLACEABLE_BY_TREES)
                 .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_GRASS))
-             .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE));
+                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
+                .add(ModBlocks.getRK(ModBlocks.VERDANT_CYCAD))
+                .add(ModBlocks.getRK(ModBlocks.FRIGID_LICHEN))
+                .add(ModBlocks.getRK(ModBlocks.PERMASNOW_BUSH))
+        ;
+
+        tag(BlockTags.WASHED_AWAY_BY_FLUIDS)
+                .add(ModBlocks.getRK(ModBlocks.PERMASNOW_BUSH))
+
+        ;
 
 
         tag(BlockTags.LEAVES)
@@ -177,11 +190,18 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.YELLOW_BIRCH_LEAVES))
                 .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_GRASS))
                 .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_LEAVES));
+                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_LEAVES))
+                .add(ModBlocks.getRK(ModBlocks.VERDANT_CYCAD))
+                .add(ModBlocks.getRK(ModBlocks.FRIGID_LICHEN))
+                .add(ModBlocks.getRK(ModBlocks.PERMASNOW_BUSH))
+        ;
 
         tag(BlockTags.REPLACEABLE_BY_MUSHROOMS)
 
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE));
+                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
+                .add(ModBlocks.getRK(ModBlocks.FRIGID_LICHEN))
+                .add(ModBlocks.getRK(ModBlocks.PERMASNOW_BUSH))
+        ;
 
 
         tag(BlockTags.LAVA_POOL_STONE_CANNOT_REPLACE)
@@ -232,9 +252,73 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 BlockTags.CAN_GLIDE_THROUGH,
                 BlockTags.WASHED_AWAY_BY_FLUIDS,
                 BlockTags.SWORD_EFFICIENT,
-                BlockTags.SHEARS_MINOR_BREAKING_SPEED
+                BlockTags.SHEARS_MINOR_BREAKING_SPEED);
 
+        addToTags(
+                ModBlocks.getRK(ModBlocks.ELDER_CACTUS),
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.CAT_DOES_NOT_TELEPORT_TO,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.ENDERMAN_HOLDABLE,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.CAUSES_SUFFOCATION,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.SUPPORT_OVERRIDE_CACTUS_FLOWER,
+                BlockTags.ENDERMAN_DOES_NOT_TELEPORT_TO,
+                BlockTags.BLOCKS_MOTION,
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD,
+                BlockTags.HAPPY_GHAST_AVOIDS,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.DANGEROUS_FOR_TELEPORTATION);
 
-        );
+        addToTags(
+                ModBlocks.getRK(ModBlocks.WARM_SNIFFER_EGG),
+                BlockTags.BLOCKS_MOTION,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD,
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE);
+
+        addToTags(
+                ModBlocks.getRK(ModBlocks.COLD_SNIFFER_EGG),
+                BlockTags.BLOCKS_MOTION,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD,
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE);
+
+        addToTags(
+                ModBlocks.getRK(ModBlocks.COLD_SNIFFER_EGG),
+                BlockTags.BLOCKS_MOTION,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD,
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE);
+
+        addToTags(
+                ModBlocks.getRK(ModBlocks.FRIGID_LICHEN),
+                BlockTags.FALL_DAMAGE_RESETTING,
+                BlockTags.ENCHANTMENT_POWER_TRANSMITTER,
+                BlockTags.WASHED_AWAY_BY_FLUIDS,
+                BlockTags.SWORD_EFFICIENT,
+                BlockTags.INSIDE_STEP_SOUND_BLOCKS,
+                BlockTags.SHEARS_MINOR_BREAKING_SPEED);
     }
 }

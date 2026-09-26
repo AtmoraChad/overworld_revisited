@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "overworld_revisited:item/cold_sniffer_egg"
+  }
+}

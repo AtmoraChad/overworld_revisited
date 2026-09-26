@@ -23,6 +23,15 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.THIN_BIRCH);
                         output.accept(ModBlocks.YELLOW_BIRCH_LEAVES);
 
+                        output.accept(ModItems.WARM_SNIFFER_EGG);
+                        output.accept(ModItems.COLD_SNIFFER_EGG);
+
+                        output.accept(ModBlocks.ELDER_CACTUS);
+                        output.accept(ModBlocks.VERDANT_CYCAD);
+
+                        output.accept(ModBlocks.FRIGID_LICHEN);
+                        output.accept(ModBlocks.PERMASNOW_BUSH);
+
                         output.accept(ModWindsweptBlocks.TEMPEST_GRASS);
                         output.accept(ModWindsweptBlocks.TEMPEST_LEAVES);
                         output.accept(ModWindsweptBlocks.TEMPEST_VINE);

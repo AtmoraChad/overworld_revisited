@@ -7,11 +7,16 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
+import net.minecraft.client.data.models.blockstates.PropertyDispatch;
 import net.minecraft.client.data.models.model.ModelLocationUtils;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
+import net.minecraft.client.data.models.model.TextureSlot;
+import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SnifferEggBlock;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) {super(output);}
@@ -40,6 +45,13 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockModelGenerators.createCrossBlock(ModWindsweptBlocks.STORMWOOD_SAPLING, BlockModelGenerators.PlantType.NOT_TINTED);
 
+        registerSnifferEgg(blockModelGenerators, ModBlocks.WARM_SNIFFER_EGG, "warm_sniffer_egg");
+        registerSnifferEgg(blockModelGenerators, ModBlocks.COLD_SNIFFER_EGG, "cold_sniffer_egg");
+
+        blockModelGenerators.createDoublePlant(ModBlocks.VERDANT_CYCAD, BlockModelGenerators.PlantType.NOT_TINTED);
+
+        blockModelGenerators.createCrossBlock(ModBlocks.PERMASNOW_BUSH, BlockModelGenerators.PlantType.NOT_TINTED);
+
     }
 
 
@@ -50,6 +62,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.TEMPEST_VINES, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.STORMWOOD_SAPLING, ModelTemplates.FLAT_ITEM);
 
+        itemModelGenerators.generateFlatItem(ModItems.WARM_SNIFFER_EGG, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.COLD_SNIFFER_EGG, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.VERDANT_CYCAD, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.PERMASNOW_BUSH, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.FRIGID_LICHEN, ModelTemplates.FLAT_ITEM);
 
     }
 
@@ -81,5 +100,39 @@ public class ModModelProvider extends FabricModelProvider {
         generator.blockStateOutput.accept(BlockModelGenerators.createWall(wall,
                 BlockModelGenerators.plainVariant(post), BlockModelGenerators.plainVariant(low), BlockModelGenerators.plainVariant(tall)));
         generator.registerSimpleItemModel(wall, inventory);
+    }
+
+
+    private static Identifier snifferEggModel(
+            BlockModelGenerators generator,
+            String name
+    ) {
+        TextureMapping textures = new TextureMapping()
+                .put(TextureSlot.BOTTOM, blockTexture(name + "_bottom"))
+                .put(TextureSlot.TOP, blockTexture(name + "_top"))
+                .put(TextureSlot.NORTH, blockTexture(name + "_north"))
+                .put(TextureSlot.SOUTH, blockTexture(name + "_south"))
+                .put(TextureSlot.EAST, blockTexture(name + "_east"))
+                .put(TextureSlot.WEST, blockTexture(name + "_west"));
+
+        return ModelTemplates.SNIFFER_EGG.create(Identifier.fromNamespaceAndPath("overworld_revisited", "block/" + name),
+                textures, generator.modelOutput);
+    }
+
+    private static Material blockTexture(String name) {
+        return new Material(Identifier.fromNamespaceAndPath("overworld_revisited", "block/" + name));
+    }
+
+
+    private static void registerSnifferEgg(BlockModelGenerators generator, Block block, String name) {
+        Identifier normal = snifferEggModel(generator, name + "_not_cracked");
+        Identifier slight = snifferEggModel(generator, name + "_slightly_cracked");
+        Identifier cracked = snifferEggModel(generator, name + "_very_cracked");
+
+        generator.blockStateOutput.accept(MultiVariantGenerator.dispatch(block).with(
+                                PropertyDispatch.initial(SnifferEggBlock.HATCH)
+                                        .select(0, BlockModelGenerators.plainVariant(normal))
+                                        .select(1, BlockModelGenerators.plainVariant(slight))
+                                        .select(2, BlockModelGenerators.plainVariant(cracked))));
     }
 }

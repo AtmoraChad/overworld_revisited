@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "overworld_revisited:block/verdant_cycad_bottom"
+    },
+    "half=upper": {
+      "model": "overworld_revisited:block/verdant_cycad_top"
+    }
+  }
+}

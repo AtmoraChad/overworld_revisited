@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "overworld_revisited:frigid_lichen"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

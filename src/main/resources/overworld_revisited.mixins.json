@@ -6,8 +6,10 @@
     "ExampleMixin",
     "FoxEntityMixin",
     "GoatEntityMixin",
+    "SnifferEntityMixin",
     "client.FoxEntityRendererMixin",
-    "client.GoatEntityRendererMixin"
+    "client.GoatEntityRendererMixin",
+    "client.SnifferEntityRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

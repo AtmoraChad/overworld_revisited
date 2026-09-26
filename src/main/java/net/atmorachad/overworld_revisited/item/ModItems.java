@@ -36,6 +36,26 @@ public class ModItems {
             properties -> new BlockItem(ModWindsweptBlocks.STORMWOOD_SAPLING,
                     properties.useItemDescriptionPrefix()));
 
+    public static final Item WARM_SNIFFER_EGG = registerItem("warm_sniffer_egg",
+            properties -> new BlockItem(ModBlocks.WARM_SNIFFER_EGG,
+                    properties.useItemDescriptionPrefix()));
+
+    public static final Item COLD_SNIFFER_EGG = registerItem("cold_sniffer_egg",
+            properties -> new BlockItem(ModBlocks.COLD_SNIFFER_EGG,
+                    properties.useItemDescriptionPrefix()));
+
+    public static final Item VERDANT_CYCAD = registerItem("verdant_cycad",
+            properties -> new BlockItem(ModBlocks.VERDANT_CYCAD,
+                    properties.useItemDescriptionPrefix()));
+
+    public static final Item FRIGID_LICHEN = registerItem("frigid_lichen",
+            properties -> new BlockItem(ModBlocks.FRIGID_LICHEN,
+                    properties.useItemDescriptionPrefix()));
+
+    public static final Item PERMASNOW_BUSH = registerItem("permasnow_bush",
+            properties -> new BlockItem(ModBlocks.PERMASNOW_BUSH,
+                    properties.useItemDescriptionPrefix()));
+
     public static ResourceKey<Item> getRK(Item item) {
         return BuiltInRegistries.ITEM.getResourceKey(item).get();
     }

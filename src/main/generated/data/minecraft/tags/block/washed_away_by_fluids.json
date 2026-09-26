@@ -1,7 +1,9 @@
 {
   "values": [
+    "overworld_revisited:permasnow_bush",
     "overworld_revisited:thin_birch_sapling",
     "overworld_revisited:stormwood_sapling",
-    "overworld_revisited:tempest_vine"
+    "overworld_revisited:tempest_vine",
+    "overworld_revisited:frigid_lichen"
   ]
 }

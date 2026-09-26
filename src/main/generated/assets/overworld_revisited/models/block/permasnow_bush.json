@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "overworld_revisited:block/permasnow_bush"
+  }
+}

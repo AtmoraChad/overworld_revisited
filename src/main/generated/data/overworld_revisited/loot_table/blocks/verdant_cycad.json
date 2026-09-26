@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "condition": {
+            "type": "minecraft:match_block",
+            "blocks": "overworld_revisited:verdant_cycad",
+            "state": {
+              "half": "lower"
+            }
+          },
+          "name": "overworld_revisited:verdant_cycad"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

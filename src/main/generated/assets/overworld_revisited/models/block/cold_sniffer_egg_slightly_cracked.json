@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/sniffer_egg",
+  "textures": {
+    "bottom": "overworld_revisited:block/cold_sniffer_egg_slightly_cracked_bottom",
+    "east": "overworld_revisited:block/cold_sniffer_egg_slightly_cracked_east",
+    "north": "overworld_revisited:block/cold_sniffer_egg_slightly_cracked_north",
+    "south": "overworld_revisited:block/cold_sniffer_egg_slightly_cracked_south",
+    "top": "overworld_revisited:block/cold_sniffer_egg_slightly_cracked_top",
+    "west": "overworld_revisited:block/cold_sniffer_egg_slightly_cracked_west"
+  }
+}

@@ -1,8 +1,10 @@
 package net.atmorachad.overworld_revisited.block;
 
 import net.atmorachad.overworld_revisited.OverworldRevisited;
+import net.atmorachad.overworld_revisited.block.blocktype.ColdSnifferEggBlock;
 import net.atmorachad.overworld_revisited.block.blocktype.ThinBirchSaplingBlock;
 import net.atmorachad.overworld_revisited.block.blocktype.ThinBirchStalkBlock;
+import net.atmorachad.overworld_revisited.block.blocktype.WarmSnifferEggBlock;
 import net.atmorachad.overworld_revisited.particle.ModParticles;
 import net.minecraft.core.Registry;
 import net.minecraft.core.particles.ParticleTypes;
@@ -44,6 +46,33 @@ public class ModBlocks {
                             .strength(1.0F).sound(SoundType.BAMBOO).noOcclusion().dynamicShape()
                             .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.POPPED)
                             .isRedstoneConductor(Blocks::never)));
+
+    public static final Block WARM_SNIFFER_EGG = registerBlockWithoutItem("warm_sniffer_egg",
+    properties -> new WarmSnifferEggBlock(properties
+            .mapColor(MapColor.TERRACOTTA_YELLOW).strength(0.5F).sound(SoundType.METAL).noOcclusion()));
+
+    public static final Block COLD_SNIFFER_EGG = registerBlockWithoutItem("cold_sniffer_egg",
+            properties -> new ColdSnifferEggBlock(properties
+                    .mapColor(MapColor.TERRACOTTA_WHITE).strength(0.5F).sound(SoundType.METAL).noOcclusion()));
+
+
+    public static final Block ELDER_CACTUS = registerBlock("elder_cactus",
+            properties -> new CactusBlock(properties.mapColor(MapColor.PLANT)
+                    .randomTicks().strength(0.4F).sound(SoundType.WOOL).pushReaction(PushReaction.POPPED)));
+
+    public static final Block VERDANT_CYCAD = registerBlockWithoutItem("verdant_cycad",
+            properties -> new DoublePlantBlock(properties.mapColor(MapColor.PLANT).replaceable().noCollision().instabreak()
+                    .sound(SoundType.MOSS_CARPET).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.POPPED)));
+
+
+    public static final Block FRIGID_LICHEN = registerBlockWithoutItem("frigid_lichen",
+            properties -> new GlowLichenBlock(properties.mapColor(MapColor.PLANT).replaceable().noCollision().instabreak()
+                    .sound(SoundType.GLOW_LICHEN).ignitedByLava().pushReaction(PushReaction.POPPED)));
+
+    public static final Block PERMASNOW_BUSH = registerBlockWithoutItem("permasnow_bush",
+            properties -> new BushBlock(properties.mapColor(MapColor.PLANT).replaceable().noCollision().instabreak()
+                    .sound(SoundType.GRASS).ignitedByLava().pushReaction(PushReaction.POPPED)));
+
 
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();

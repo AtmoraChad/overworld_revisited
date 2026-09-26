@@ -35,9 +35,22 @@
   "block.overworld_revisited.tempest_vine": "Tempest Vines",
   "item.overworld_revisited.tempest_vine": "Tempest Vines",
 
+  "block.overworld_revisited.warm_sniffer_egg": "Warm Sniffer Egg",
+  "item.overworld_revisited.warm_sniffer_egg": "Warm Sniffer Egg",
+
+  "block.overworld_revisited.cold_sniffer_egg": "Cold Sniffer Egg",
+  "item.overworld_revisited.cold_sniffer_egg": "Cold Sniffer Egg",
 
   "block.overworld_revisited.stormwood_sapling": "Stormwood Sapling",
 
+  "block.overworld_revisited.elder_cactus": "Elder Cactus",
+  "block.overworld_revisited.verdant_cycad": "Verdant Cycad",
+  "item.overworld_revisited.verdant_cycad": "Verdant Cycad",
+
+  "block.overworld_revisited.permasnow_bush": "Permasnow Bush",
+  "item.overworld_revisited.permasnow_bush": "Permasnow Bush",
+  "block.overworld_revisited.frigid_lichen": "Frigid Lichen",
+  "item.overworld_revisited.frigid_lichen": "Frigid Lichen",
 
   "creativemodetab.overworld_revisited.fluorite_blocks": "Overworld Revisited"
 }
