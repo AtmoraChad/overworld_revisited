@@ -15,7 +15,7 @@ public class ModWoodTypes {
     public static final WoodType GALE = register(
             new WoodType(
                     "gale",
-                    BlockSetType.SPRUCE,
+                    ModBlockSetType.GALE,
                     SoundType.WOOD,
                     SoundType.HANGING_SIGN,
                     SoundEvents.FENCE_GATE_CLOSE,

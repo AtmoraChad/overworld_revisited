@@ -6,6 +6,7 @@
     "ExampleMixin",
     "FoxEntityMixin",
     "GoatEntityMixin",
+    "MonsterMixin",
     "SnifferEntityMixin",
     "client.FoxEntityRendererMixin",
     "client.GoatEntityRendererMixin",
@@ -16,5 +17,5 @@
   },
   "overwrites": {
     "requireAnnotations": true
-	}
+  }
 }

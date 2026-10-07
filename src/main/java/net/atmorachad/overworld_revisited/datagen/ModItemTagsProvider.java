@@ -21,7 +21,7 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         tag(ItemTags.LEAVES)
                 .add(ModBlocks.getItemRK(ModBlocks.YELLOW_BIRCH_LEAVES))
-                .add(ModBlocks.getItemRK(ModWindsweptBlocks.TEMPEST_LEAVES))
+                .add(ModWindsweptBlocks.getItemRK(ModWindsweptBlocks.TEMPEST_LEAVES))
         ;
 
         tag(ItemTags.PLANKS)

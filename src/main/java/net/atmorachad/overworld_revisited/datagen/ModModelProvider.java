@@ -1,6 +1,7 @@
 package net.atmorachad.overworld_revisited.datagen;
 
 import net.atmorachad.overworld_revisited.block.ModBlocks;
+import net.atmorachad.overworld_revisited.block.ModDesertBlocks;
 import net.atmorachad.overworld_revisited.block.ModWindsweptBlocks;
 import net.atmorachad.overworld_revisited.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
@@ -17,6 +18,8 @@ import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SnifferEggBlock;
+import net.minecraft.world.level.block.ColorCollection;
+import net.minecraft.client.data.models.model.TexturedModel;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) {super(output);}
@@ -52,6 +55,12 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockModelGenerators.createCrossBlock(ModBlocks.PERMASNOW_BUSH, BlockModelGenerators.PlantType.NOT_TINTED);
 
+        blockModelGenerators.createTrivialCube(ModDesertBlocks.PACKED_SAND);
+        blockModelGenerators.createTrivialCube(ModDesertBlocks.PACKED_RED_SAND);
+        blockModelGenerators.createTrivialCube(ModDesertBlocks.SOFT_SANDSTONE_GOLD_ORE);
+        blockModelGenerators.createTrivialCube(ModDesertBlocks.TERRACOTTA_GOLD_ORE);
+
+        blockModelGenerators.createCrossBlock(ModDesertBlocks.LUMINESCENT_CACTUS_FLOWER, BlockModelGenerators.PlantType.NOT_TINTED);
     }
 
 
@@ -69,6 +78,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerators.generateFlatItem(ModItems.PERMASNOW_BUSH, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.FRIGID_LICHEN, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.LUMINESCENT_CACTUS_FLOWER, ModelTemplates.FLAT_ITEM);
 
     }
 

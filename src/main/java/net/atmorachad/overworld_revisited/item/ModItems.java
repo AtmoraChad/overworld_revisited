@@ -2,6 +2,7 @@ package net.atmorachad.overworld_revisited.item;
 
 import net.atmorachad.overworld_revisited.OverworldRevisited;
 import net.atmorachad.overworld_revisited.block.ModBlocks;
+import net.atmorachad.overworld_revisited.block.ModDesertBlocks;
 import net.atmorachad.overworld_revisited.block.ModWindsweptBlocks;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
@@ -54,6 +55,10 @@ public class ModItems {
 
     public static final Item PERMASNOW_BUSH = registerItem("permasnow_bush",
             properties -> new BlockItem(ModBlocks.PERMASNOW_BUSH,
+                    properties.useItemDescriptionPrefix()));
+
+    public static final Item LUMINESCENT_CACTUS_FLOWER = registerItem("luminescent_cactus_flower",
+            properties -> new BlockItem(ModDesertBlocks.LUMINESCENT_CACTUS_FLOWER,
                     properties.useItemDescriptionPrefix()));
 
     public static ResourceKey<Item> getRK(Item item) {

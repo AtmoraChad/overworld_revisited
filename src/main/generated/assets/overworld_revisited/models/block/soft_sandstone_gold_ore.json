@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "overworld_revisited:block/soft_sandstone_gold_ore"
+  }
+}

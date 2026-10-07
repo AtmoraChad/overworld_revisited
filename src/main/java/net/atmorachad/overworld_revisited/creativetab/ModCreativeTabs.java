@@ -2,6 +2,7 @@ package net.atmorachad.overworld_revisited.creativetab;
 
 import net.atmorachad.overworld_revisited.OverworldRevisited;
 import net.atmorachad.overworld_revisited.block.ModBlocks;
+import net.atmorachad.overworld_revisited.block.ModDesertBlocks;
 import net.atmorachad.overworld_revisited.block.ModWindsweptBlocks;
 import net.atmorachad.overworld_revisited.item.ModItems;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
@@ -52,7 +53,14 @@ public class ModCreativeTabs {
                         output.accept(ModItems.GALE_SIGN);
                         output.accept(ModItems.GALE_HANGING_SIGN);
                         output.accept(ModWindsweptBlocks.GALE_SHELF);
-                        
+
+                        output.accept(ModDesertBlocks.PACKED_SAND);
+                        output.accept(ModDesertBlocks.PACKED_RED_SAND);
+                        output.accept(ModDesertBlocks.SOFT_SANDSTONE_GOLD_ORE);
+                        output.accept(ModDesertBlocks.TERRACOTTA_GOLD_ORE);
+                        output.accept(ModItems.LUMINESCENT_CACTUS_FLOWER);
+
+
                     }).build());
 
     public static void registerModCreativeModeTabs() {

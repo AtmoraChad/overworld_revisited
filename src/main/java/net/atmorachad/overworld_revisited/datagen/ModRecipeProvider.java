@@ -1,6 +1,7 @@
 package net.atmorachad.overworld_revisited.datagen;
 
 import net.atmorachad.overworld_revisited.block.ModBlocks;
+import net.atmorachad.overworld_revisited.block.ModDesertBlocks;
 import net.atmorachad.overworld_revisited.block.ModWindsweptBlocks;
 import net.atmorachad.overworld_revisited.item.ModItems;
 import net.atmorachad.overworld_revisited.tag.ModTags;
@@ -12,9 +13,12 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.CookingBookCategory;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.block.Blocks;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -141,6 +145,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('R', ModWindsweptBlocks.GALE_PLANKS)
                         .unlockedBy(getHasName(ModWindsweptBlocks.GALE_PLANKS), has(ModWindsweptBlocks.GALE_PLANKS))
                         .save(output);
+
+
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModDesertBlocks.PACKED_SAND, 1)
+                        .pattern("RRR")
+                        .pattern("RRR")
+                        .pattern("RRR")
+                        .define('R', Blocks.SAND)
+                        .unlockedBy(getHasName(Blocks.SAND), has(Blocks.SAND))
+                        .save(output);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModDesertBlocks.PACKED_RED_SAND, 1)
+                        .pattern("RRR")
+                        .pattern("RRR")
+                        .pattern("RRR")
+                        .define('R', Blocks.RED_SAND)
+                        .unlockedBy(getHasName(Blocks.RED_SAND), has(Blocks.RED_SAND))
+                        .save(output);
+
+
+                oreSmelting(List.of(ModDesertBlocks.TERRACOTTA_GOLD_ORE), RecipeCategory.MISC,
+                        CookingBookCategory.BLOCKS, Items.GOLD_INGOT, 1.0F, 200, "gold_ore");
+
+                oreBlasting(List.of(ModDesertBlocks.TERRACOTTA_GOLD_ORE), RecipeCategory.MISC,
+                        CookingBookCategory.BLOCKS, Items.GOLD_INGOT, 1.0F, 100, "gold_ore");
+
+
+                oreSmelting(List.of(ModDesertBlocks.SOFT_SANDSTONE_GOLD_ORE), RecipeCategory.MISC,
+                        CookingBookCategory.BLOCKS, Items.GOLD_INGOT, 1.0F, 200, "gold_ore");
+
+                oreBlasting(List.of(ModDesertBlocks.SOFT_SANDSTONE_GOLD_ORE), RecipeCategory.MISC,
+                        CookingBookCategory.BLOCKS, Items.GOLD_INGOT, 1.0F, 100, "gold_ore");
             }
         };
     }

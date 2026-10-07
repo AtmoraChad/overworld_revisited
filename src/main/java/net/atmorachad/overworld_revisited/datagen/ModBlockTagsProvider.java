@@ -1,10 +1,12 @@
 package net.atmorachad.overworld_revisited.datagen;
 
 import net.atmorachad.overworld_revisited.block.ModBlocks;
+import net.atmorachad.overworld_revisited.block.ModDesertBlocks;
 import net.atmorachad.overworld_revisited.block.ModWindsweptBlocks;
 import net.atmorachad.overworld_revisited.tag.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
+import net.fabricmc.fabric.api.tag.FabricTagKey;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.references.BlockItemIds;
 import net.minecraft.resources.ResourceKey;
@@ -30,9 +32,14 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider registries) {
 
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+
+        tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModDesertBlocks.getRK(ModDesertBlocks.PACKED_SAND))
+                .add(ModDesertBlocks.getRK(ModDesertBlocks.PACKED_RED_SAND));
+
+
+        tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlocks.getRK(ModBlocks.FRIGID_LICHEN));
-        ;
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
 
@@ -112,64 +119,64 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_TRAPDOOR));
 
         tag(BlockTags.STAIRS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_STAIRS));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_STAIRS));
 
         tag(BlockTags.WOODEN_STAIRS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_STAIRS));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_STAIRS));
 
         tag(BlockTags.SLABS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_SLAB));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_SLAB));
 
         tag(BlockTags.WOODEN_SLABS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_SLAB));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_SLAB));
 
         tag(BlockTags.FENCES)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_FENCE));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_FENCE));
 
         tag(BlockTags.WOODEN_FENCES)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_FENCE));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_FENCE));
 
         tag(BlockTags.FENCE_GATES)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_FENCE_GATE));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_FENCE_GATE));
 
         tag(BlockTags.BUTTONS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_BUTTON));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_BUTTON));
 
         tag(BlockTags.WOODEN_BUTTONS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_BUTTON));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_BUTTON));
 
         tag(BlockTags.PRESSURE_PLATES)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_PRESSURE_PLATE));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_PRESSURE_PLATE));
 
         tag(BlockTags.WOODEN_PRESSURE_PLATES)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_PRESSURE_PLATE));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_PRESSURE_PLATE));
 
         tag(BlockTags.SIGNS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_SIGN))
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_WALL_SIGN));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_SIGN))
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_WALL_SIGN));
 
         tag(BlockTags.STANDING_SIGNS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_SIGN));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_SIGN));
 
         tag(BlockTags.WALL_POST_OVERRIDE)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_SIGN));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_SIGN));
 
         tag(BlockTags.WALL_SIGNS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_WALL_SIGN));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_WALL_SIGN));
 
         tag(BlockTags.ALL_HANGING_SIGNS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_HANGING_SIGN))
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_WALL_HANGING_SIGN));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_HANGING_SIGN))
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_WALL_HANGING_SIGN));
 
         tag(BlockTags.CEILING_HANGING_SIGNS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_HANGING_SIGN));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_HANGING_SIGN));
 
         tag(BlockTags.WALL_HANGING_SIGNS)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.GALE_WALL_HANGING_SIGN));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.GALE_WALL_HANGING_SIGN));
 
         tag(BlockTags.REPLACEABLE_BY_TREES)
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_GRASS))
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.TEMPEST_GRASS))
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
                 .add(ModBlocks.getRK(ModBlocks.VERDANT_CYCAD))
                 .add(ModBlocks.getRK(ModBlocks.FRIGID_LICHEN))
                 .add(ModBlocks.getRK(ModBlocks.PERMASNOW_BUSH))
@@ -177,28 +184,27 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.WASHED_AWAY_BY_FLUIDS)
                 .add(ModBlocks.getRK(ModBlocks.PERMASNOW_BUSH))
-
         ;
 
 
         tag(BlockTags.LEAVES)
                 .add(ModBlocks.getRK(ModBlocks.YELLOW_BIRCH_LEAVES))
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_LEAVES));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.TEMPEST_LEAVES));
 
 
         tag(BlockTags.REPLACEABLE)
                 .add(ModBlocks.getRK(ModBlocks.YELLOW_BIRCH_LEAVES))
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_GRASS))
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_LEAVES))
-                .add(ModBlocks.getRK(ModBlocks.VERDANT_CYCAD))
-                .add(ModBlocks.getRK(ModBlocks.FRIGID_LICHEN))
-                .add(ModBlocks.getRK(ModBlocks.PERMASNOW_BUSH))
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.TEMPEST_GRASS))
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.TEMPEST_LEAVES))
+                .add(ModWindsweptBlocks.getRK(ModBlocks.VERDANT_CYCAD))
+                .add(ModWindsweptBlocks.getRK(ModBlocks.FRIGID_LICHEN))
+                .add(ModWindsweptBlocks.getRK(ModBlocks.PERMASNOW_BUSH))
         ;
 
         tag(BlockTags.REPLACEABLE_BY_MUSHROOMS)
 
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
                 .add(ModBlocks.getRK(ModBlocks.FRIGID_LICHEN))
                 .add(ModBlocks.getRK(ModBlocks.PERMASNOW_BUSH))
         ;
@@ -206,8 +212,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.LAVA_POOL_STONE_CANNOT_REPLACE)
                 .add(ModBlocks.getRK(ModBlocks.YELLOW_BIRCH_LEAVES))
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
-                .add(ModBlocks.getRK(ModWindsweptBlocks.TEMPEST_LEAVES));
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.TEMPEST_VINE))
+                .add(ModWindsweptBlocks.getRK(ModWindsweptBlocks.TEMPEST_LEAVES));
 
 
         tag(ModTags.Blocks.SUPPORTS_THIN_BIRCH)
@@ -320,5 +326,70 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 BlockTags.SWORD_EFFICIENT,
                 BlockTags.INSIDE_STEP_SOUND_BLOCKS,
                 BlockTags.SHEARS_MINOR_BREAKING_SPEED);
+
+        addToTags(
+                ModDesertBlocks.getRK(ModDesertBlocks.PACKED_SAND),
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE,
+                BlockTags.BLOCKS_MOTION,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.SCULK_REPLACEABLE_WORLD_GEN,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD,
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.CAUSES_SUFFOCATION,
+                BlockTags.SCULK_REPLACEABLE);
+
+        addToTags(
+                ModDesertBlocks.getRK(ModDesertBlocks.PACKED_RED_SAND),
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE,
+                BlockTags.BLOCKS_MOTION,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.SCULK_REPLACEABLE_WORLD_GEN,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD,
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.CAUSES_SUFFOCATION,
+                BlockTags.SCULK_REPLACEABLE);
+
+        addToTags(
+                ModDesertBlocks.getRK(ModDesertBlocks.SOFT_SANDSTONE_GOLD_ORE),
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE,
+                BlockTags.BLOCKS_MOTION,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.SCULK_REPLACEABLE_WORLD_GEN,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD,
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.CAUSES_SUFFOCATION,
+                BlockTags.ORES,
+                BlockTags.GOLD_ORES,
+                BlockTags.SCULK_REPLACEABLE);
+
+        addToTags(
+                ModDesertBlocks.getRK(ModDesertBlocks.TERRACOTTA_GOLD_ORE),
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE,
+                BlockTags.BLOCKS_MOTION,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.SCULK_REPLACEABLE_WORLD_GEN,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD,
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.CAUSES_SUFFOCATION,
+                BlockTags.ORES,
+                BlockTags.GOLD_ORES,
+                BlockTags.TERRACOTTA,
+                BlockTags.SCULK_REPLACEABLE);
     }
 }

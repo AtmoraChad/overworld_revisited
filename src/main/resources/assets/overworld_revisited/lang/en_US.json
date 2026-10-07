@@ -52,5 +52,15 @@
   "block.overworld_revisited.frigid_lichen": "Frigid Lichen",
   "item.overworld_revisited.frigid_lichen": "Frigid Lichen",
 
+  "block.overworld_revisited.soft_sandstone": "Soft Sandstone",
+  "block.overworld_revisited.soft_red_sandstone": "Soft Red Sandstone",
+
+  "block.overworld_revisited.soft_sandstone_gold_ore": "Soft Sandstone Gold Ore",
+  "block.overworld_revisited.terracotta_gold_ore": "Terracotta Gold Ore",
+
+  "block.overworld_revisited.luminescent_cactus_flower": "Luminescent Cactus Flower",
+  "item.overworld_revisited.luminescent_cactus_flower": "Luminescent Cactus Flower",
+
+
   "creativemodetab.overworld_revisited.fluorite_blocks": "Overworld Revisited"
 }

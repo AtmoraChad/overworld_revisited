@@ -1,0 +1,27 @@
+{
+  "feature": "overworld_revisited:ore_gold_desert_cave",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 50
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "absolute": 64
+        },
+        "min_inclusive": {
+          "absolute": -64
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

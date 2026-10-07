@@ -6,82 +6,68 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:torchflower_seeds",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "minecraft:entity_type": "minecraft:sniffer"
-              }
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{OverworldRevisitedSnifferVariant:0}"
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:pitcher_pod",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "minecraft:entity_type": "minecraft:sniffer"
-              }
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{OverworldRevisitedSnifferVariant:0}"
             }
-          ]
+          }
         },
-
         {
           "type": "minecraft:item",
           "name": "overworld_revisited:verdant_cycad",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "minecraft:entity_type": "overworld_revisited:warm_sniffer"
-              }
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{OverworldRevisitedSnifferVariant:1}"
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "overworld_revisited:elder_cactus",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "minecraft:entity_type": "overworld_revisited:warm_sniffer"
-              }
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{OverworldRevisitedSnifferVariant:1}"
             }
-          ]
+          }
         },
-
         {
           "type": "minecraft:item",
           "name": "overworld_revisited:frigid_lichen",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "minecraft:entity_type": "overworld_revisited:cold_sniffer"
-              }
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{OverworldRevisitedSnifferVariant:2}"
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "overworld_revisited:permasnow_bush",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "minecraft:entity_type": "overworld_revisited:cold_sniffer"
-              }
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{OverworldRevisitedSnifferVariant:2}"
             }
-          ]
+          }
         }
       ],
       "rolls": 1.0

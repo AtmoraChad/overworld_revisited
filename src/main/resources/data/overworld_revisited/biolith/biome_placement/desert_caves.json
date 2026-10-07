@@ -1,0 +1,33 @@
+{
+  "sub_biomes": [
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:desert",
+      "biome": "overworld_revisited:desert_caves",
+      "criterion": {
+        "type": "biolith:value",
+        "parameter": "depth",
+        "min": 0.1
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:dripstone_caves",
+      "biome": "overworld_revisited:desert_caves",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:neighbor",
+            "biome": "minecraft:desert"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "depth",
+            "min": 0.1
+          }
+        ]
+      }
+    }
+  ]
+}

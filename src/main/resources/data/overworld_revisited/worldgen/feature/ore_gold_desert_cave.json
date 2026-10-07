@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:ore",
+  "discard_chance_on_air_exposure": 0.0,
+  "size": 9,
+  "targets": [
+    {
+      "state": "overworld_revisited:terracotta_gold_ore",
+      "target": {
+        "predicate_type": "minecraft:any_of",
+        "rules": [
+          {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:terracotta"
+          },
+          {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:yellow_terracotta"
+          },
+          {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:orange_terracotta"
+          }
+        ]
+      }
+    },
+    {
+      "state": "overworld_revisited:soft_sandstone_gold_ore",
+      "target": {
+        "predicate_type": "minecraft:any_of",
+        "rules": [
+          {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:sand"
+          },
+          {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:sandstone"
+          },
+          {
+            "predicate_type": "minecraft:block_match",
+            "block": "overworld_revisited:soft_sandstone"
+          }
+        ]
+      }
+    }
+  ]
+}
