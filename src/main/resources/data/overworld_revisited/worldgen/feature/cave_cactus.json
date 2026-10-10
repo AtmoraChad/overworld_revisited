@@ -25,11 +25,11 @@
         "distribution": [
           {
             "data": 0,
-            "weight": 0
+            "weight": 5
           },
           {
             "data": 1,
-            "weight": 9
+            "weight": 4
           }
         ]
       },

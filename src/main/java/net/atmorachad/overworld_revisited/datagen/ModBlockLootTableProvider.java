@@ -45,6 +45,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
 
         createOreDrop(ModDesertBlocks.TERRACOTTA_GOLD_ORE, Items.RAW_GOLD);
         createOreDrop(ModDesertBlocks.SOFT_SANDSTONE_GOLD_ORE, Items.RAW_GOLD);
+        createOreDrop(ModDesertBlocks.SOFT_RED_SANDSTONE_IRON_ORE, Items.RAW_IRON);
 
     }
 }

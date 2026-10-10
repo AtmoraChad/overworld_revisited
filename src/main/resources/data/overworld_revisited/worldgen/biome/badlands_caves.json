@@ -97,7 +97,7 @@
     },
     "minecraft:gameplay/snow_golem_melts": true,
     "minecraft:visual/sky_color": "#6eb1ff",
-    "minecraft:visual/fog_color": "#9a6a1f",
+    "minecraft:visual/fog_color": "#9a411f",
 
     "minecraft:visual/fog_start_distance": 12.0,
     "minecraft:visual/fog_end_distance": 96.0
@@ -140,7 +140,7 @@
       "minecraft:ore_iron_upper",
       "minecraft:ore_iron_middle",
       "minecraft:ore_iron_small",
-      "overworld_revisited:desert_ore_gold",
+      "overworld_revisited:badlands_ore_iron",
       "minecraft:ore_gold",
       "minecraft:ore_gold_lower",
       "minecraft:ore_redstone",
@@ -160,7 +160,7 @@
     [],
     [
       "minecraft:spring_lava",
-      "overworld_revisited:desert_cave_coating"
+      "overworld_revisited:badlands_cave_coating"
     ],
     [
       "minecraft:glow_lichen",

@@ -1,6 +1,7 @@
-package net.atmorachad.overworld_revisited.worldgen;
+package net.atmorachad.overworld_revisited.worldgen.surface_rules;
 
 import net.atmorachad.overworld_revisited.block.ModDesertBlocks;
+import net.atmorachad.overworld_revisited.worldgen.ModBiomes;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
@@ -13,7 +14,7 @@ import net.minecraft.world.level.levelgen.material.rule.MaterialRule;
 import net.minecraft.world.level.levelgen.placement.CaveSurface;
 import net.minecraft.world.level.levelgen.synth.NormalNoise;
 
-public class ModMaterialRules {
+public class DesertCaveMaterialRules {
 
     private static final MaterialCondition NEAR_SURFACE = MaterialRules.abovePreliminarySurface();
 
@@ -42,10 +43,6 @@ public class ModMaterialRules {
     private static final MaterialCondition CEILING_SANDSTONE =
             MaterialRules.stoneDepthCheck(
                     3, false, 0, CaveSurface.CEILING);
-
-    private static final MaterialCondition STONE_LAYER = MaterialRules.not(
-                    MaterialRules.verticalGradient("deepslate",
-                            VerticalAnchor.absolute(0), VerticalAnchor.absolute(8)));
 
     private static final MaterialCondition DESERT_CAVE_DEPTH = MaterialRules.yBlockCheck(
                     VerticalAnchor.absolute(-30), 0);

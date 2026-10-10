@@ -33,6 +33,10 @@ public class ModDesertBlocks {
             properties -> new Block(properties.mapColor(MapColor.SAND)
                     .instrument(NoteBlockInstrument.SNARE).strength(0.75F).sound(SoundType.STONE)));
 
+    public static final Block SOFT_RED_SANDSTONE_IRON_ORE = registerBlock("soft_red_sandstone_iron_ore",
+            properties -> new Block(properties.mapColor(MapColor.SAND)
+                    .instrument(NoteBlockInstrument.SNARE).strength(0.75F).sound(SoundType.STONE)));
+
     public static final Block TERRACOTTA_GOLD_ORE = registerBlock("terracotta_gold_ore",
             properties -> new Block(properties.mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresCorrectToolForDrops().strength(1.25F, 4.2F)));

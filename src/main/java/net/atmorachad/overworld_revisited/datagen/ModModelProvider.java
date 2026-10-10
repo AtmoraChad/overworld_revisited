@@ -59,6 +59,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModDesertBlocks.PACKED_RED_SAND);
         blockModelGenerators.createTrivialCube(ModDesertBlocks.SOFT_SANDSTONE_GOLD_ORE);
         blockModelGenerators.createTrivialCube(ModDesertBlocks.TERRACOTTA_GOLD_ORE);
+        blockModelGenerators.createTrivialCube(ModDesertBlocks.SOFT_RED_SANDSTONE_IRON_ORE);
 
         blockModelGenerators.createCrossBlock(ModDesertBlocks.LUMINESCENT_CACTUS_FLOWER, BlockModelGenerators.PlantType.NOT_TINTED);
     }

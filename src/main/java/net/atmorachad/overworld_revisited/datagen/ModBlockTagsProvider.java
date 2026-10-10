@@ -391,5 +391,22 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 BlockTags.GOLD_ORES,
                 BlockTags.TERRACOTTA,
                 BlockTags.SCULK_REPLACEABLE);
+
+        addToTags(
+                ModDesertBlocks.getRK(ModDesertBlocks.SOFT_RED_SANDSTONE_IRON_ORE),
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE,
+                BlockTags.BLOCKS_MOTION,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.SCULK_REPLACEABLE_WORLD_GEN,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD,
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.CAUSES_SUFFOCATION,
+                BlockTags.ORES,
+                BlockTags.GOLD_ORES,
+                BlockTags.SCULK_REPLACEABLE);
     }
 }

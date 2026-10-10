@@ -10,4 +10,7 @@ public class ModBiomes {
 
     public static final ResourceKey<Biome> DESERT_CAVES =
             ResourceKey.create(Registries.BIOME, OverworldRevisited.id("desert_caves"));
+
+    public static final ResourceKey<Biome> BADLANDS_CAVES =
+            ResourceKey.create(Registries.BIOME, OverworldRevisited.id("badlands_caves"));
 }

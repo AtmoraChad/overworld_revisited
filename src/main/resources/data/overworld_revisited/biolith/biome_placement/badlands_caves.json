@@ -1,0 +1,148 @@
+{
+  "sub_biomes": [
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:badlands",
+      "biome": "overworld_revisited:badlands_caves",
+      "criterion": {
+        "type": "biolith:value",
+        "parameter": "depth",
+        "min": 0.1
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:wooded_badlands",
+      "biome": "overworld_revisited:badlands_caves",
+      "criterion": {
+        "type": "biolith:value",
+        "parameter": "depth",
+        "min": 0.1
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:eroded_badlands",
+      "biome": "overworld_revisited:badlands_caves",
+      "criterion": {
+        "type": "biolith:value",
+        "parameter": "depth",
+        "min": 0.1
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:dripstone_caves",
+      "biome": "overworld_revisited:badlands_caves",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:neighbor",
+            "biome": "minecraft:badlands"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "depth",
+            "min": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:dripstone_caves",
+      "biome": "overworld_revisited:badlands_caves",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:neighbor",
+            "biome": "minecraft:eroded_badlands"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "depth",
+            "min": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:dripstone_caves",
+      "biome": "overworld_revisited:badlands_caves",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:neighbor",
+            "biome": "minecraft:wooded_badlands"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "depth",
+            "min": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sulfur_caves",
+      "biome": "overworld_revisited:badlands_caves",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:neighbor",
+            "biome": "minecraft:badlands"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "depth",
+            "min": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sulfur_caves",
+      "biome": "overworld_revisited:badlands_caves",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:neighbor",
+            "biome": "minecraft:eroded_badlands"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "depth",
+            "min": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sulfur_caves",
+      "biome": "overworld_revisited:badlands_caves",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:neighbor",
+            "biome": "minecraft:wooded_badlands"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "depth",
+            "min": 0.1
+          }
+        ]
+      }
+    }
+  ]
+}

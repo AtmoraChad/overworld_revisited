@@ -9,7 +9,8 @@ import net.atmorachad.overworld_revisited.creativetab.ModCreativeTabs;
 import net.atmorachad.overworld_revisited.item.ModItems;
 import net.atmorachad.overworld_revisited.particle.ModParticles;
 import net.atmorachad.overworld_revisited.util.MinYCriterion;
-import net.atmorachad.overworld_revisited.worldgen.ModMaterialRules;
+import net.atmorachad.overworld_revisited.worldgen.surface_rules.BadlandsCaveMaterialRules;
+import net.atmorachad.overworld_revisited.worldgen.surface_rules.DesertCaveMaterialRules;
 import net.atmorachad.overworld_revisited.worldgen.feature.ModFeatures;
 import net.fabricmc.api.ModInitializer;
 
@@ -49,7 +50,12 @@ public class OverworldRevisited implements ModInitializer {
 
 		SurfaceGeneration.addOverworldSurfaceRules(
 				Identifier.fromNamespaceAndPath("overworld_revisited", "desert_caves"),
-				ModMaterialRules::desertCaves
+				DesertCaveMaterialRules::desertCaves
+		);
+
+		SurfaceGeneration.addOverworldSurfaceRules(
+				Identifier.fromNamespaceAndPath("overworld_revisited", "badlands_caves"),
+				BadlandsCaveMaterialRules::badlandsCaves
 		);
 	}
 

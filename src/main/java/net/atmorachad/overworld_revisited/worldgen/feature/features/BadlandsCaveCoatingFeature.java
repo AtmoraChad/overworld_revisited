@@ -13,11 +13,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.feature.Feature;
 
-public class DesertCaveCoatingFeature implements Feature {
+public class BadlandsCaveCoatingFeature implements Feature {
 
-    public static final DesertCaveCoatingFeature INSTANCE = new DesertCaveCoatingFeature();
+    public static final BadlandsCaveCoatingFeature INSTANCE = new BadlandsCaveCoatingFeature();
 
-    public static final MapCodec<DesertCaveCoatingFeature> CODEC = MapCodec.unit(INSTANCE);
+    public static final MapCodec<BadlandsCaveCoatingFeature> CODEC = MapCodec.unit(INSTANCE);
 
     @Override
     public boolean place(WorldGenLevel level, ChunkGenerator chunkGenerator, RandomSource random, BlockPos origin) {
@@ -47,7 +47,7 @@ public class DesertCaveCoatingFeature implements Feature {
                         continue;
                     }
 
-                    if (!level.getBiome(pos).is(ModBiomes.DESERT_CAVES)) {
+                    if (!level.getBiome(pos).is(ModBiomes.BADLANDS_CAVES)) {
                         continue;
                     }
 
@@ -57,7 +57,7 @@ public class DesertCaveCoatingFeature implements Feature {
 
                     level.setBlock(
                             pos,
-                            ModDesertBlocks.PACKED_SAND.defaultBlockState(),
+                            ModDesertBlocks.PACKED_RED_SAND.defaultBlockState(),
                             2
                     );
 
